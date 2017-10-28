@@ -18,3 +18,4 @@
 /doc/apigen/
 /doc/jsdoc/
 /doc/plato/
+.env
