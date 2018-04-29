@@ -18,7 +18,7 @@ end
 desc "Deploy"
 task :deploy do
   puts "Building image ..."
-  exec "docker-compose -f docker-compose.prod.yml build"
+  system "docker-compose -f docker-compose.prod.yml build"
   puts "Saving image ..."
   system "docker save -o #{image_tar} #{image_tag}"
   puts "Transferring image ..."
